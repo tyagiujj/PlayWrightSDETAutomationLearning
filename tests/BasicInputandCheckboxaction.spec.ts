@@ -3,13 +3,17 @@ import { test, expect } from "@playwright/test";
 test("Verify title and form fields", async ({ page }) => {
 
     // Open application
-    await page.goto("https://testautomationpractice.blogspot.com/");
-
-    // Verify title
-    await expect(page).toHaveTitle("Automation Testing Practice");
+    await page.goto("https://testautomationpractice.blogspot.com/", {
+        waitUntil: "domcontentloaded"
+    });
 
     // Verify URL
-    await expect(page).toHaveURL("https://testautomationpractice.blogspot.com/");
+    await expect(page).toHaveURL(
+        "https://testautomationpractice.blogspot.com/"
+    );
+
+    // Verify page title
+    await expect(page).toHaveTitle("Automation Testing Practice");
 
     // Enter Name
     const enterNameInput = page.getByPlaceholder("Enter Name");
