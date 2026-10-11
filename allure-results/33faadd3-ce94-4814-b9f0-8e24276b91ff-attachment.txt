@@ -1,1 +1,0 @@
-Text element is visible :  getByText('Automation Testing Practice')

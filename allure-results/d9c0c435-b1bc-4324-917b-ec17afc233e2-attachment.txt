@@ -1,1 +1,0 @@
-Checkbox is enabled and checked :  getByLabel('Sunday')
