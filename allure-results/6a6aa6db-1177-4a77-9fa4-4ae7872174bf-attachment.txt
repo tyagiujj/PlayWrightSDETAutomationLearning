@@ -1,0 +1,1 @@
+Radio button is enabled and checked :  getByRole('radio', { name: 'Male', exact: true })

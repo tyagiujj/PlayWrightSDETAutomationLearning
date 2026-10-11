@@ -1,0 +1,1 @@
+Input field is enabled and filled with value :  getByPlaceholder('Enter Name')
